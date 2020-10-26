@@ -1,5 +1,5 @@
 import {Component, OnInit} from '@angular/core';
-import {Task} from "../../models/Task";
+import {Task} from '../../models/Task';
 import * as moment from 'moment';
 @Component({
   selector: 'app-home',

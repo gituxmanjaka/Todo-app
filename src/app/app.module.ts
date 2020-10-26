@@ -6,20 +6,21 @@ import { AppComponent } from './app.component';
 import { BrowserAnimationsModule } from '@angular/platform-browser/animations';
 import { HomeComponent } from './pages/home/home.component';
 import { AboutComponent } from './pages/about/about.component';
-import {MatToolbarModule} from "@angular/material/toolbar";
-import {MatIconModule} from "@angular/material/icon";
-import {MatButtonModule} from "@angular/material/button";
-import {MatInputModule} from "@angular/material/input";
-import {MatCardModule} from "@angular/material/card";
+import {MatToolbarModule} from '@angular/material/toolbar';
+import {MatIconModule} from '@angular/material/icon';
+import {MatButtonModule} from '@angular/material/button';
+import {MatInputModule} from '@angular/material/input';
+import {MatCardModule} from '@angular/material/card';
 import { CreateTaskComponent } from './components/create-task/create-task.component';
-import {MatTableModule} from "@angular/material/table";
+import {MatTableModule} from '@angular/material/table';
 import { ListTaskComponent } from './components/list-task/list-task.component';
-import {FormsModule} from "@angular/forms";
+import {FormsModule} from '@angular/forms';
 import { DetailsTaskComponent } from './dialog/details-task/details-task.component';
-import {MatDialogModule} from "@angular/material/dialog";
-import {MatTooltipModule} from "@angular/material/tooltip";
-import {MatMenuModule} from "@angular/material/menu";
+import {MatDialogModule} from '@angular/material/dialog';
+import {MatTooltipModule} from '@angular/material/tooltip';
+import {MatMenuModule} from '@angular/material/menu';
 import { AlertRemoveComponent } from './dialog/alert-remove/alert-remove.component';
+import {MatPaginatorModule} from '@angular/material/paginator';
 
 @NgModule({
   declarations: [
@@ -44,7 +45,8 @@ import { AlertRemoveComponent } from './dialog/alert-remove/alert-remove.compone
     MatTableModule,
     MatDialogModule,
     MatTooltipModule,
-    MatMenuModule
+    MatMenuModule,
+    MatPaginatorModule
   ],
   providers: [],
   bootstrap: [AppComponent]
