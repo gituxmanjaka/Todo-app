@@ -14,6 +14,8 @@ export class HomeComponent implements OnInit {
   }
 
   ngOnInit(): void {
+    console.log('*******homeComponent onInit********');
+
     for (let i = 1; i < 5; i++) {
       this.allTask.push({
           id: i,
@@ -29,29 +31,28 @@ export class HomeComponent implements OnInit {
     // Mettre les donnees dans allTask
   }
 
-  onAdd(newTask: Task) {
+  onAdd(newTask: Task): void {
     this.allTask.push({...newTask, id: this.allTask.length + 1, createdAt: new Date()});
     this.allTask = this.allTask.filter(x => true);
   }
 
-  onDone(taskToBeDone: Task) {
+  onDone(taskToBeDone: Task): void {
     const task = this.allTask.find(task => task.id === taskToBeDone.id);
     task.isDone = true;
     task.doneAt = new Date();
   }
 
-  onDelete(id: number) {
+  onDelete(id: number): void {
     this.allTask = this.allTask.filter(task => task.id !== id);
   }
 
-  onEdit(taskToEdit: Task) {
+  onEdit(taskToEdit: Task): void {
     this.editMe = {...taskToEdit};
   }
 
-  handleEdit(editedTask: Task) {
+  handleEdit(editedTask: Task): void {
     const task = this.allTask.find(task => task.id === editedTask.id);
     task.description = editedTask.description;
     task.title = editedTask.title;
   }
-
 }

@@ -1,5 +1,11 @@
-table {
-  margin-top: 20px;
+table, mat-paginator {
+  margin-left: auto;
+  margin-right: auto;
   width: 70%;
-  margin: auto;
+}
+table {
+  margin-top: 50px;
+}
+mat-paginator {
+  margin-bottom: 50px;
 }
